@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EF791D05-1195-470C-8BF4-132347274EBD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>TI_Coder.My.MyApplication</StartupObject>
+    <RootNamespace>TI_Coder</RootNamespace>
+    <AssemblyName>TI-Coder</AssemblyName>
+    <MyType>WindowsForms</MyType>
+    <OptionStrict>On</OptionStrict>
+    <ApplicationIcon>icon.ICO</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>TI-Coder.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>TI-Coder.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="vjslib" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="8xpFile.vb" />
+    <Compile Include="ButtonList.Designer.vb">
+      <DependentUpon>ButtonList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ButtonList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClipboardMonitor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommandLine.vb" />
+    <Compile Include="DBLoad.vb" />
+    <Compile Include="frmAbout.Designer.vb">
+      <DependentUpon>frmAbout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAbout.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGetKey.Designer.vb">
+      <DependentUpon>frmGetKey.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGetKey.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGroup.Designer.vb">
+      <DependentUpon>frmGroup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGroup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenu.Designer.vb">
+      <DependentUpon>frmMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStorage.Designer.vb">
+      <DependentUpon>frmStorage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmStorage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmToken.designer.vb">
+      <DependentUpon>frmToken.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmToken.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Globals.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Tokens.vb" />
+    <Compile Include="Zip.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ButtonList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ButtonList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAbout.resx">
+      <DependentUpon>frmAbout.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGroup.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmGroup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenu.resx">
+      <DependentUpon>frmMenu.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStorage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmStorage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmToken.resx">
+      <DependentUpon>frmToken.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CALCULUS.8xp">
+    </None>
+    <None Include="Old Stuff\TI-83\bytes.byt">
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Old Stuff\TI-83\paths.str">
+    </None>
+    <None Include="Old Stuff\TI-83\texts.str">
+    </None>
+    <None Include="TI83.tkn">
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ti83p.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Copy.bmp" />
+    <None Include="Resources\Cut.bmp" />
+    <None Include="Resources\Menu Designer.bmp" />
+    <None Include="Resources\NewDocument.bmp" />
+    <None Include="Resources\Open.bmp" />
+    <None Include="Resources\Paste.bmp" />
+    <None Include="Resources\Save.bmp" />
+    <None Include="Resources\ti83keypad.bmp" />
+    <Content Include="icon.ICO" />
+    <None Include="Resources\48.bmp" />
+    <Content Include="Ticoder.ICO" />
+    <Content Include="tokens.mdb">
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Unoriginal\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

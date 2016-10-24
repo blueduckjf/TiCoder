@@ -1,0 +1,109 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+TI-Coder
+</name>
+</assembly>
+<members>
+<member name="M:TI_Coder.ZipUtility.Compress(System.String[],System.String)">
+	<summary>
+ Compresses files and folders into a zip file. 
+ </summary>
+	<param name="paths">A string-array of file and folder names(paths).</param>
+	<param name="zipFileName">A zip-file name.</param>
+</member><member name="M:TI_Coder.ZipUtility.Decompress(System.String,System.String)">
+	<summary>
+ Decompresses zip files.
+ </summary>
+	<param name="zipFileName">A zip-file name.</param>
+	<param name="saveToDir">A directory where the decompressed file to be placed.</param>
+</member><member name="M:TI_Coder.ZipUtility.AddEntries(System.String,System.String[],System.String)">
+	<summary>
+ Creates a new zip file and writes all the entries from the specified 
+ zip file and the additional entries into the new zip file.
+ </summary>
+	<param name="zipFileName">A zip file from which all 
+ the entries should be copied to a new zip file.</param>
+	<param name="paths">A string-array of file and folder names(paths).</param>
+	<param name="newZipFile">A new zip file that will contain all 
+ the entries from the specified zip file and the added entries.</param>
+	<remarks></remarks>
+</member><member name="M:TI_Coder.ZipUtility.RemoveEntries(System.String,System.String[],System.String)">
+	<summary>
+ Creates a new zip file and copies the desired entries 
+ from the specified zip file into the new zip file.
+ </summary>
+	<param name="zipFileName">A zip file from which the 
+ desired entries should be copied to a new zip file.</param>
+	<param name="entryNames">Zip-entry names that should 
+ be excluded of coping into a new zip file.</param>
+	<param name="newZipFile">A new zip file that will 
+ contain the desired zip-entries with their data.</param>
+</member><member name="M:TI_Coder.ZipUtility.GetEntries(System.String)">
+	<summary>Gets the entries of the zip file.</summary>
+	<param name="zipFileName">The zip file name.</param>
+</member><member name="M:TI_Coder.ZipUtility.IsDirectory(java.util.zip.ZipEntry)">
+	<summary>
+ Returns True if the entry is a directory otherwise returns False.
+ </summary>
+	<param name="entry">A zip entry.</param>
+</member><member name="M:TI_Coder.ZipUtility.FormatSize(System.Int64)">
+	<summary>
+ Formats byte-size to bytes, KB, MB or GB.
+ </summary>
+	<param name="size">Size in bytes.</param>
+</member><member name="M:TI_Coder.ZipUtility.CopyStream(java.io.InputStream,java.io.OutputStream,System.String)">
+	<summary>
+ Copies binary data from one stream to another.
+ </summary>
+	<param name="input">The source stream.</param>
+	<param name="output"> The destination stream.</param>
+</member><member name="P:TI_Coder.ZipUtility.ProgressChangedEventArgs.FileName">
+	<summary>
+ Gets the file name that is being processed.
+ </summary>
+</member><member name="P:TI_Coder.ZipUtility.ProgressChangedEventArgs.FilesProcessed">
+	<summary>
+ Gets the count of processed files.
+ </summary>
+</member><member name="P:TI_Coder.ZipUtility.ProgressChangedEventArgs.ProgressPercentage">
+	<summary>
+ Gets the percentage of the process that has been completed.
+ </summary>
+</member><member name="P:TI_Coder.ZipUtility.CompletedEventArgs.Action">
+	<summary>
+ Gets the action that is performed on the files.
+ </summary>
+</member><member name="P:TI_Coder.ZipUtility.CompletedEventArgs.CompressedSize">
+	<summary>
+ Gets the compressed size of the zip file.
+ </summary>
+</member><member name="P:TI_Coder.ZipUtility.CompletedEventArgs.FileCount">
+	<summary>
+ Gets the count of the compressed files in the archive.
+ </summary>
+</member><member name="P:TI_Coder.ZipUtility.CompletedEventArgs.OriginalSize">
+	<summary>
+ Gets the uncompressed total size of the files.
+ </summary>
+</member><member name="P:TI_Coder.ZipUtility.CompletedEventArgs.ZipFileName">
+	<summary>
+ Gets the zip file name on which an action has been performed.
+ </summary>
+</member><member name="P:TI_Coder.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:TI_Coder.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:TI_Coder.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>
